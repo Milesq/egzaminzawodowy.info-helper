@@ -1,5 +1,5 @@
 <?php
-if(!isset($_GET['q'])) {
+if(!isset($_GET['q']) && !isset($_GET['link'])) {
     http_response_code(401);
     die;
 }
